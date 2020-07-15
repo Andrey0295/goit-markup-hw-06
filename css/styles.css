@@ -818,7 +818,7 @@ figure {
   position: absolute;
   top:0px;
   left:370px;
-  width: 200px; 200px; 200px;
+  width: 200px; 
   height: 50px;
   padding-left: 29px;
   padding-right: 62px;
@@ -829,8 +829,8 @@ figure {
    border-radius: 4px;
 cursor: pointer;
 font-family: Roboto;
-font-style: normal;
-font-weight: bold;
+font-style: 400;
+font-weight: 700;
 font-size: 16px;
 line-height: 30px;
 letter-spacing: 0.06em;
