@@ -57,18 +57,18 @@
         <h1 class="title-hero">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
         <!-- Здесь будет background-image, сделанный при помощи стилей -->
 
-        <button type="button" class="button-hero">
+        <button type="button" class="button-hero" data-modal-open>
           Заказать услугу
         </button>
       </section>
     </div>
-    <div class="backdrop">
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <b class="modal-title">Оставьте свои данные, мы вам перезвоним</b>
         <form>
           <div class="form-field">
-            <input type="text" name="name" id="name" />
-            <label for="name">Имя</label>
+            <input type="text" name="name" id="name" placeholder=" " />
+            <label for="name" class="form-label">Имя</label>
 
             <svg class="icon">
               <use href="./images/sprite.svg#icon-person-icon"></use>
@@ -76,8 +76,8 @@
           </div>
 
           <div class="form-field">
-            <input type="tel" name="phone" id="phone" />
-            <label for="phone">Телефон</label>
+            <input type="tel" name="phone" id="phone" placeholder=" " />
+            <label for="phone" class="form-label">Телефон</label>
 
             <svg class="icon">
               <use href="./images/sprite.svg#icon-phone-modal-icon"></use>
@@ -85,8 +85,8 @@
           </div>
 
           <div class="form-field">
-            <input type="email" name="email" id="email" />
-            <label for="email">Почта</label>
+            <input type="email" name="email" id="email" placeholder=" " />
+            <label for="email" class="form-label">Почта</label>
             <svg class="icon">
               <use href="./images/sprite.svg#icon-email-icon"></use>
             </svg>
@@ -96,15 +96,19 @@
             <textarea name="comment" id="" cols="20" rows="10"></textarea>
           </div>
         </form>
-        <div class="checkbox">
-          <input type="checkbox" name="checkbox" id="accept" />
-          <label for="accept"
-            >Соглашаюсь с рассылкой и принимаю
-            <a href="">Условия договора</a></label
-          >
-        </div>
 
-        <button type="button" class="close-button">
+        <label class="checkbox"
+          ><input type="checkbox" name="checkbox" class="input-checkbox" /><span
+            class="icon-checkbox"
+          ></span>
+          <div class="checkbox-comment">
+            Соглашаюсь с рассылкой и принимаю
+
+            <a href="" class="modal-link">Условия договора</a>
+          </div></label
+        >
+
+        <button type="button" class="close-button" data-modal-close>
           <svg class="close-icon">
             <use href="./images/sprite.svg#icon-close-icon"></use>
           </svg>
@@ -603,5 +607,6 @@
         <!-- <p class="author">2020 | Developed by GoIT Students</p> -->
       </div>
     </footer>
+    <script src="/java-script/java-script.js"></script>
   </body>
 </html>
