@@ -259,6 +259,13 @@ form {
 
   margin-top: 40px;
   margin-bottom: 30px;
+  font-family: Roboto;
+font-style: 400;
+font-weight: 700;
+font-size: 20px;
+line-height: 1.1px;
+letter-spacing: 0.03em;
+
 }
 .form-field {
   display: flex;
@@ -284,6 +291,13 @@ form {
   position: absolute;
   top: 12px;
   left: 42px;
+
+  font-family: Roboto;
+font-style: 400;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.01em;
   transition: top 250ms cubic-bezier(0.4, 0, 0.2, 1),
     left 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -323,6 +337,26 @@ input:not(:placeholder-shown) + .form-label {
 .form-field:hover textarea {
   border: 1px solid var(--accent-color);
 }
+::-webkit-input-placeholder {font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.01em;}
+::-moz-placeholder          {font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.01em;}
+:-ms-input-placeholder      {font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.01em;}
+
+
 .checkbox {
   position: fixed;
   display: inline-block;
@@ -350,11 +384,12 @@ input:not(:placeholder-shown) + .form-label {
   top: 20%;
   left: 0%;
   display: inline-block;
-  width: 15px;
+  width: 16px;
   height: 15px;
 
   background-color: white;
   border: 2px solid black;
+  border-radius: 2px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -362,14 +397,23 @@ input:not(:placeholder-shown) + .form-label {
   background-color: var(--accent-color);
   background-image: url(../images/vector.svg);
   background-size: contain;
+  background-repeat: no-repeat;
   background-origin: border-box;
   border: 2px solid var(--accent-color);
+  border-radius: 2px;
   transform: transition;
 }
 .checkbox-comment {
-  display: inline-block;
-  padding-left: 21px;
-  /* padding-right: 0px; */
+ display: inline-block;
+padding-left: 21px;
+ 
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 1.7px;
+letter-spacing: 0.03em;
+
 }
 .modal-link {
   color: var(--accent-color);
@@ -399,8 +443,8 @@ input:not(:placeholder-shown) + .form-label {
   display: flex;
   align-items: center;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 8px;
+  right: 8px;
   width: 30px;
   height: 30px;
   cursor: pointer;
